@@ -106,3 +106,30 @@
 105,4ad4fcb,2026-10-11,Tanya Singh,tanyasingh077,Store,added settings file,13
 106,4c27594,2026-10-11,Tanya Singh,tanyasingh077,Store,added storeinformation file,15
 107,1d3cdf1,2026-10-11,Tanya Singh,tanyasingh077,Store,added upgrade file,1
+108,610ac44,2026-10-11,Vrushay Bohra,bohra0022,Super Admin,feat(super-admin): add CommissionsPage.jsx prototype page,1
+109,9ec83fa,2026-10-11,Vrushay Bohra,bohra0022,Super Admin,chore(super-admin): add components index exports,1
+110,fbee595,2026-10-11,Vrushay Bohra,bohra0022,Super Admin,feat(super-admin): add SuperAdminSidebar.jsx layout component,1
+111,1dbf643,2026-10-11,Vrushay Bohra,bohra0022,Super Admin,feat(super-admin): add SuperAdminTopbar.jsx layout component,1
+112,38b3c4b,2026-10-11,Vrushay Bohra,bohra0022,Super Admin,feat(super-admin): add Dashboard page with store charts,1
+113,39cbc11,2026-10-11,Vrushay Bohra,bohra0022,Super Admin,feat(super-admin): add ExportsPage.jsx prototype page,1
+114,bf0bb80,2026-10-11,Vrushay Bohra,bohra0022,Super Admin,chore(super-admin): add module index exports,1
+115,bb2bcea,2026-10-11,Vrushay Bohra,bohra0022,Super Admin,docs(super-admin): add module README,1
+116,79c998c,2026-10-11,Vrushay Bohra,bohra0022,Super Admin,feat(super-admin): add NotificationSettingsForm.jsx settings form,1
+117,0ecb5ae,2026-10-11,Vrushay Bohra,bohra0022,Super Admin,feat(super-admin): add ProfileSettingsForm.jsx settings form,1
+118,e48a674,2026-10-11,Vrushay Bohra,bohra0022,Super Admin,feat(super-admin): add SecuritySettingsForm.jsx settings form,1
+119,913eb7b,2026-10-11,Vrushay Bohra,bohra0022,Super Admin,feat(super-admin): add SystemSettingsForm.jsx settings form,1
+120,89141f3,2026-10-11,Vrushay Bohra,bohra0022,Super Admin,feat(super-admin): add useSettingsState hook,1
+121,0f2ad02,2026-10-11,Vrushay Bohra,bohra0022,Super Admin,feat(super-admin): add SettingsPage.jsx,1
+122,d26f3d8,2026-10-11,Vrushay Bohra,bohra0022,Super Admin,feat(super-admin): add PendingRequestsPage.jsx for store management,1
+123,9d3db4f,2026-10-11,Vrushay Bohra,bohra0022,Super Admin,feat(super-admin): add StoreDetailDrawer.jsx store component,1
+124,529072b,2026-10-11,Vrushay Bohra,bohra0022,Super Admin,feat(super-admin): add StoreDetailsPage.jsx for store management,1
+125,6ceb572,2026-10-11,Vrushay Bohra,bohra0022,Super Admin,feat(super-admin): add StoreListPage.jsx for store management,1
+126,794b27f,2026-10-11,Vrushay Bohra,bohra0022,Super Admin,feat(super-admin): add StoreStatusBadge.jsx store component,1
+127,d30883c,2026-10-11,Vrushay Bohra,bohra0022,Super Admin,feat(super-admin): add StoreTable.jsx store component,1
+128,81aaa50,2026-10-11,Vrushay Bohra,bohra0022,Super Admin,feat(super-admin): add AddPlanDialog.jsx for subscription plans,1
+129,874967c,2026-10-11,Vrushay Bohra,bohra0022,Super Admin,feat(super-admin): add EditPlanDialog.jsx for subscription plans,1
+130,6537373,2026-10-11,Vrushay Bohra,bohra0022,Super Admin,feat(super-admin): add SubscriptionPlansPage.jsx for subscription plans,1
+131,f8ce95c,2026-10-11,Vrushay Bohra,bohra0022,Super Admin,feat(super-admin): add dashboard layout with sidebar and topbar,1
+132,5af8fce,2026-10-11,Vrushay Bohra,bohra0022,Routing,feat(super-admin): add Super Admin routes,1
+133,6fb0e21,2026-10-11,Vrushay Bohra,bohra0022,Super Admin,fix(super-admin): correct page paths in index exports,1
+134,7edfd9c,2026-10-11,Vrushay Bohra,bohra0022,Super Admin,docs(super-admin): correct the registrations chart period in README,1

@@ -38,7 +38,7 @@ src/pages/SuperAdminDashboard/
 
 ### 1. Dashboard (`/super-admin/dashboard`)
 - **Stat Cards**: Total Stores, Active Stores, Blocked Stores, Pending Requests
-- **Bar Chart**: Store registrations over the last 30 days
+- **Bar Chart**: Store registrations over the last 7 days
 - **Pie Chart**: Store status distribution
 - **Recent Activity**: Latest system events
 

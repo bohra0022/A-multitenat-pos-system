@@ -1,6 +1,6 @@
 # Project Timeline: Multi-Tenant POS System
 
-The project runs for 10 weeks, planned from Monday 6 July 2026. Weeks 1 to 5 are done, and week 6 (testing) is in progress. The Status column shows where the work stands today. The editable version, with week dates calculated from the start date, is in `Project_Timeline.xlsx` in this folder.
+The project runs for 10 weeks, planned from Monday 6 July 2026. Weeks 1, 3, 4 and 5 are done. Week 2 (Redux part 2) and week 6 (testing) are in progress. The Status column shows where the work stands today. The editable version, with week dates calculated from the start date, is in `Project_Timeline.xlsx` in this folder.
 
 ## Timeline chart
 
@@ -9,13 +9,12 @@ gantt
     title POS System 10-week timeline
     dateFormat YYYY-MM-DD
     axisFormat %d %b
-    section Done
+    section Weeks 1 to 6
     Week 1 Setup, backend and roles            :done, w1, 2026-07-06, 7d
-    Week 2 Design and Redux split              :done, w2, 2026-07-13, 7d
+    Week 2 Design and Redux split              :active, w2, 2026-07-13, 7d
     Week 3 Super Admin and onboarding          :done, w3, 2026-07-20, 7d
     Week 4 Store module                        :done, w4, 2026-07-27, 7d
     Week 5 Branch Manager and Cashier          :done, w5, 2026-08-03, 7d
-    section In progress
     Week 6 Testing                             :active, w6, 2026-08-10, 7d
     section Planned
     Week 7 Payments and integration            :w7, 2026-08-17, 7d
@@ -29,8 +28,8 @@ gantt
 | Week | Dates | Focus | Owners | Status |
 | --- | --- | --- | --- | --- |
 | 1 | 6 to 12 Jul | Setup, backend upload, roles, folder structure, GitHub training | Subhash, Vrushay | Done |
-| 2 | 13 to 19 Jul | Design diagrams and Redux Toolkit split (part 1 Vrushay, part 2 Subhash) | Vrushay, Subhash | Done |
-| 3 | 20 to 26 Jul | Frontend: Super Admin module, login and onboarding | Subhash, Vrushay, Tanya (onboarding) | Done |
+| 2 | 13 to 19 Jul | Design diagrams (done) and Redux Toolkit split: part 1 Vrushay (done), part 2 Subhash (in progress) | Vrushay, Subhash | In progress |
+| 3 | 20 to 26 Jul | Frontend: Super Admin module (26 commits), login and onboarding | Vrushay (Super Admin), Tanya (onboarding) | Done |
 | 4 | 27 Jul to 2 Aug | Frontend: Store module (the largest, 11 pages) | Tanya | Done |
 | 5 | 3 to 9 Aug | Frontend: Branch Manager and Cashier modules | Vishvas (Branch Manager), Vimal (Cashier) | Done |
 | 6 | 10 to 16 Aug | Testing: Postman report and 96 test cases done, results to record, bug fixes | Vrushay with the whole team | In progress |
@@ -43,8 +42,8 @@ gantt
 
 | Member | GitHub | Module | Pages |
 | --- | --- | --- | --- |
-| Vrushay Bohra | bohra0022 | Redux Toolkit part 1, Super Admin (with Subhash) | 11 Redux features |
-| Subhash Dhaka | subhash8729 | Redux Toolkit part 2, Super Admin (with Vrushay) | 6 pages |
+| Vrushay Bohra | bohra0022 | Redux Toolkit part 1, Super Admin | 11 Redux features, 6 pages |
+| Subhash Dhaka | subhash8729 | Folder structure, Redux Toolkit part 2 | 11 Redux features and `globleState.js` |
 | Vimal Kumar | iamvkb7 | Cashier | 5 pages |
 | Vishvas Choubisa | choubisavishvas-web | Branch Manager | 9 pages |
 | Tanya Singh | tanyasingh077 | Store and onboarding | 11 pages |
@@ -71,7 +70,7 @@ The detailed log is in `reports/04-weekly-progress/frontend_work_log.md`.
 | Branch Manager pages (customers, dashboard, cashier performance) | `3197520`, `bb95311`, `db9c60b` (choubisavishvas-web) |
 
 Made but not committed yet: the API test case sheet (96 cases).
-All frontend modules are completed by the team: Cashier (Vimal Kumar), Store and onboarding (Tanya Singh), Branch Manager (Vishvas Choubisa), Super Admin and Redux Toolkit part 2 (Subhash Dhaka and Vrushay Bohra).
+Frontend modules done: Super Admin (Vrushay Bohra, 26 commits), Cashier (Vimal Kumar, 40), Branch Manager (Vishvas Choubisa, 35), Store and onboarding (Tanya Singh, 11). In progress: Redux Toolkit part 2 and `globleState.js` (Subhash Dhaka).
 
 ## Marks status
 

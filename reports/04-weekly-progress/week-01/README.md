@@ -78,11 +78,11 @@ After login, `App.jsx` reads the role and shows only that role's pages. Every ot
 | --- | --- | --- |
 | Repository setup, frontend folder structure | Subhash Dhaka (subhash8729) | Done |
 | Backend upload, Redux Toolkit part 1, reports, Postman testing, commit log, timeline | Vrushay Bohra (bohra0022) | Done |
-| Redux Toolkit part 2 and `globleState.js` | Subhash Dhaka (subhash8729) | In progress |
-| Super Admin pages (6) | Subhash Dhaka and Vrushay Bohra | In progress |
-| Store pages (11, the largest module) and onboarding | Tanya Singh (tanyasingh077) | In progress |
-| Branch Manager pages (9) | Vishvas Choubisa (choubisavishvas-web) | In progress |
-| Cashier pages (5) | Vimal Kumar (iamvkb7) | In progress |
+| Redux Toolkit part 2 and `globleState.js` | Subhash Dhaka (subhash8729) | Done |
+| Super Admin pages (6) | Subhash Dhaka and Vrushay Bohra | Done |
+| Store pages (11, the largest module) and onboarding | Tanya Singh (tanyasingh077) | Done |
+| Branch Manager pages (9) | Vishvas Choubisa (choubisavishvas-web) | Done |
+| Cashier pages (5) | Vimal Kumar (iamvkb7) | Done |
 
 Each teammate works inside their own folder in `pos-frontend-vite/src/pages/`, so their changes do not collide. The full log is in `frontend_work_log.md`.
 

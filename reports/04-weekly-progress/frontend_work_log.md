@@ -6,11 +6,11 @@ Who built which part of the frontend (`pos-frontend-vite/`). The commit data bel
 
 | Member | GitHub | Module | Pages | Status |
 | --- | --- | --- | --- | --- |
-| Vrushay Bohra | bohra0022 | Redux Toolkit part 1, frontend setup, Super Admin (with Subhash) | 11 Redux features, API client, utils | Part 1 done, Super Admin in progress |
-| Subhash Dhaka | subhash8729 | Frontend folder structure, Redux Toolkit part 2, Super Admin (with Vrushay) | Dashboard, stores, store details, pending requests, subscription plans, settings | Folder structure done, rest in progress |
-| Vimal Kumar | iamvkb7 | Cashier | Create order (POS), orders, returns, customers, shift summary | In progress |
-| Vishvas Choubisa | choubisavishvas-web | Branch Manager | Dashboard, orders, refunds, transactions, inventory, employees, customers, reports, settings | In progress |
-| Tanya Singh | tanyasingh077 | Store (the largest module) and onboarding | Dashboard, branches, categories, employees, products, stores, sales, reports, upgrade, settings, alerts | In progress |
+| Vrushay Bohra | bohra0022 | Redux Toolkit part 1, frontend setup, Super Admin (with Subhash) | 11 Redux features, API client, utils | Done |
+| Subhash Dhaka | subhash8729 | Frontend folder structure, Redux Toolkit part 2, Super Admin (with Vrushay) | Dashboard, stores, store details, pending requests, subscription plans, settings | Done |
+| Vimal Kumar | iamvkb7 | Cashier | Create order (POS), orders, returns, customers, shift summary | Done |
+| Vishvas Choubisa | choubisavishvas-web | Branch Manager | Dashboard, orders, refunds, transactions, inventory, employees, customers, reports, settings | Done |
+| Tanya Singh | tanyasingh077 | Store (the largest module) and onboarding | Dashboard, branches, categories, employees, products, stores, sales, reports, upgrade, settings, alerts | Done |
 
 The Store module has 11 pages, so it is the largest. Branch Manager has 9, Super Admin has 6, and Cashier has 5.
 
@@ -31,7 +31,7 @@ The Store module has 11 pages, so it is the largest. Branch Manager has 9, Super
 | Vishvas Choubisa | `3197520`, `bb95311`, `db9c60b` | Branch Manager customer pages, dashboard and cashier performance |
 | Tanya Singh | `7307504` | Onboarding owner details page |
 
-Super Admin commits are being added to the team repo. They will show up in `frontend_work_log.csv` under the Super Admin module.
+Super Admin commits go to the team repo and show up in `frontend_work_log.csv` under the Super Admin module.
 
 ## 4. Testing log
 
@@ -39,6 +39,6 @@ Super Admin commits are being added to the team repo. They will show up in `fron
 | --- | --- | --- | --- |
 | Postman testing report (2 parts) | Vrushay Bohra | `reports/06-testing/POSTMAN_TESTING_API.md` | Done |
 | API test case sheet (96 cases) | Vrushay Bohra | `reports/06-testing/POS_Backend_Test_Cases.xlsx` | Written, results to record |
-| Run the collection with all role tokens | Whole team | Postman | In progress |
+| Run the collection with all role tokens and record results | Whole team | Postman | In progress |
 | Negative and security tests | Vrushay Bohra | test case sheet | Written, to run |
-| Frontend checks of each module | Module owners | each module's pages | Planned |
+| Frontend checks of each module | Module owners | each module's pages | In progress |

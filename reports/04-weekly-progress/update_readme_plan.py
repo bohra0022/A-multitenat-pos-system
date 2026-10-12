@@ -12,16 +12,16 @@ readme = open("README.md", encoding="utf-8").read()
 
 m = re.search(r"## 📅 Weekly Plan.*?(?=\n---\n)", readme, flags=re.S)
 if m:
-    readme = readme[:m.start()] + plan + readme[m.end():]
+    readme = readme[:m.start()] + plan + "\n" + readme[m.end():]
     print("Weekly Plan section replaced")
 else:
     first = readme.index("\n") + 1
     readme = readme[:first] + "\n---\n\n" + plan + "\n\n---\n" + readme[first:]
     print("Weekly Plan section added after the title")
 
-m = re.search(r"^## Team( and frontend modules)?[ \t]*\n.*?(?=\n## |\Z)", readme, flags=re.S | re.M)
+m = re.search(r"^## (?:👥 )?Team( and frontend modules)?[ \t]*\n.*?(?=\n## |\Z)", readme, flags=re.S | re.M)
 if m:
-    readme = readme[:m.start()] + team + readme[m.end():]
+    readme = readme[:m.start()] + team + "\n" + readme[m.end():]
     print("Team section replaced")
 else:
     readme = readme.rstrip("\n") + "\n\n" + team

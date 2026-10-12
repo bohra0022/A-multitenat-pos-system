@@ -7,19 +7,19 @@ Who built which part of the frontend (`pos-frontend-vite/`). The commit data bel
 | Member | GitHub | Module | Pages | Status |
 | --- | --- | --- | --- | --- |
 | Vrushay Bohra | bohra0022 | Redux Toolkit part 1, frontend setup, Super Admin module, routing | 11 Redux features, API client, utils, 6 Super Admin pages | Done |
-| Subhash Dhaka | subhash8729 | Frontend folder structure, Redux Toolkit part 2 | payment, product, refund, sale, shiftReport, store, storeAnalytics, subscription, subscriptionPlan, transaction, user, `globleState.js` | In progress |
+| Subhash Dhaka | subhash8729 | Frontend folder structure, Redux Toolkit part 2 | payment, product, refund, sale, shiftReport, store, storeAnalytics, subscription, subscriptionPlan, transaction, user, `globleState.js` | Done |
 | Vimal Kumar | iamvkb7 | Cashier | Create order (POS), orders, returns, customers, shift summary | Done |
 | Vishvas Choubisa | choubisavishvas-web | Branch Manager | Dashboard, orders, refunds, transactions, inventory, employees, customers, reports, settings | Done |
 | Tanya Singh | tanyasingh077 | Store (the largest module) and onboarding | Dashboard, branches, categories, employees, products, stores, sales, reports, upgrade, settings, alerts | Done |
 
 The Store module has 11 pages, so it is the largest. Branch Manager has 9, Super Admin has 6, and Cashier has 5.
 
-## 2. Redux Toolkit split
+## 2. Redux Toolkit split (fully done by Vrushay and Subhash)
 
 | Part | Owner | Features |
 | --- | --- | --- |
 | Part 1 | Vrushay Bohra | adminDashboard, auth, branch, branchAnalytics, cart, category, customer, employee, inventory, onboarding, order |
-| Part 2 | Subhash Dhaka | payment, product, refund, sale, shiftReport, store, storeAnalytics, subscription, subscriptionPlan, transaction, user, and `globleState.js` (in progress) |
+| Part 2 | Subhash Dhaka | payment, product, refund, sale, shiftReport, store, storeAnalytics, subscription, subscriptionPlan, transaction, user, and `globleState.js` (done) |
 
 ## 3. Commits by member and module (from Git, 10 Oct 2026)
 
@@ -47,7 +47,7 @@ These numbers come from `frontend_summary.csv`, which `make_commit_log.py` build
 | Tanya Singh | 11 |
 | Subhash Dhaka | 3 |
 
-The Super Admin module was committed by Vrushay Bohra (24 files, plus an index fix and a README fix). Redux Toolkit part 2 and `globleState.js` are still to be pushed. For the latest numbers, run the script again.
+The Super Admin module was committed by Vrushay Bohra (24 files, plus an index fix and a README fix). Subhash's Redux Toolkit part 2 and `globleState.js` were pushed after this count, so run the script again for the latest numbers.
 
 ## 4. Testing log
 

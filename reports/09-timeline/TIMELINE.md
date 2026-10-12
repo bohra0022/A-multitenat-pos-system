@@ -1,6 +1,6 @@
 # Project Timeline: Multi-Tenant POS System
 
-The project runs for 10 weeks, planned from Monday 6 July 2026. Weeks 1 to 5 are done, and week 6 (testing) is in progress. A new assignment is coming soon. The Status column shows where the work stands today. The editable version, with week dates calculated from the start date, is in `Project_Timeline.xlsx` in this folder.
+The project runs for 10 weeks, planned from Monday 6 July 2026. All 10 weeks are done. The editable version, with week dates calculated from the start date, is in `Project_Timeline.xlsx` in this folder.
 
 ## Timeline chart
 
@@ -15,13 +15,11 @@ gantt
     Week 3 Super Admin and onboarding          :done, w3, 2026-07-20, 7d
     Week 4 Store module                        :done, w4, 2026-07-27, 7d
     Week 5 Branch Manager and Cashier          :done, w5, 2026-08-03, 7d
-    section In progress
-    Week 6 Testing                             :active, w6, 2026-08-10, 7d
-    section Coming soon and planned
-    Week 7 New assignment                      :w7, 2026-08-17, 7d
-    Week 8 Payments, SRS and documentation     :w8, 2026-08-24, 7d
-    Week 9 Presentation and viva prep          :w9, 2026-08-31, 7d
-    Week 10 Final demo and submission          :w10, 2026-09-07, 7d
+    Week 6 Testing                             :done, w6, 2026-08-10, 7d
+    Week 7 Payments and integration            :done, w7, 2026-08-17, 7d
+    Week 8 SRS and documentation               :done, w8, 2026-08-24, 7d
+    Week 9 Presentation and viva prep          :done, w9, 2026-08-31, 7d
+    Week 10 Project report and submission      :done, w10, 2026-09-07, 7d
 ```
 
 ## Week by week
@@ -33,11 +31,11 @@ gantt
 | 3 | 20 to 26 Jul | Frontend: Super Admin module (26 commits), login and onboarding | Vrushay (Super Admin), Tanya (onboarding) | Done |
 | 4 | 27 Jul to 2 Aug | Frontend: Store module (the largest, 11 pages) | Tanya | Done |
 | 5 | 3 to 9 Aug | Frontend: Branch Manager and Cashier modules | Vishvas (Branch Manager), Vimal (Cashier) | Done |
-| 6 | 10 to 16 Aug | Testing: Postman report and 96 test cases done, results to record, bug fixes | Vrushay with the whole team | In progress |
-| 7 | 17 to 23 Aug | New assignment, coming soon | Team | Coming soon |
-| 8 | 24 to 30 Aug | Payments, code quality, SRS and documentation | Team | Planned |
-| 9 | 31 Aug to 6 Sep | Presentation and viva preparation | Team | Planned |
-| 10 | 7 to 13 Sep | Final demo and submission | Team | Planned |
+| 6 | 10 to 16 Aug | Testing: Postman report and 96 test cases | Vrushay with the whole team | Done |
+| 7 | 17 to 23 Aug | Payments, subscriptions and API integration | Team | Done |
+| 8 | 24 to 30 Aug | SRS and documentation | Team | Done |
+| 9 | 31 Aug to 6 Sep | Presentation and viva preparation | Team | Done |
+| 10 | 7 to 13 Sep | Final project report and submission | Team | Done |
 
 ## Frontend modules
 
@@ -53,35 +51,33 @@ The detailed log is in `reports/04-weekly-progress/frontend_work_log.md`.
 
 ## Completed so far
 
-| Item | Evidence |
+| Item | Where |
 | --- | --- |
-| Team repo and report folders | `80c721c`, `4584088` |
-| Spring Boot backend uploaded | `ef6144e` |
-| Idea, abstract and objectives | see `commit_log.csv` |
-| Features, modules and tech stack | `13dc390` |
-| Frontend folder structure | `ddf392b`, `751e82d` (subhash8729) |
-| Frontend config, API client and utils | `dbcae3a` |
-| Redux Toolkit part 1 (11 features) | `7ab1196` to `9809d35` |
-| Commit log | `046f470`, `67e0b4c`, `8360f7e` |
-| Postman testing report, 2 parts | `9e2ca1a`, `8172cb7` |
-| UML, ER and architecture diagrams | `11645a2` |
-| README with weekly plan | `b0ebffe`, `b4bee2d` |
-| 10-week timeline and tracker | `75398a4`, `28069ac`, `65daf38` |
-| Week 1 report and template | `4430a3c`, `7ce4830` |
-| Branch Manager pages (customers, dashboard, cashier performance) | `3197520`, `bb95311`, `db9c60b` (choubisavishvas-web) |
+| Team repo, report folders, backend upload | Week 1 report |
+| UML, ER and architecture diagrams | `reports/03-design/` |
+| Redux Toolkit, 22 features and the global store (Vrushay and Subhash) | `pos-frontend-vite/src/Redux Toolkit/` |
+| Super Admin module (Vrushay Bohra) | `pages/SuperAdminDashboard/` |
+| Store module and onboarding (Tanya Singh) | `pages/store/`, `pages/onboarding/` |
+| Branch Manager module (Vishvas Choubisa) | `pages/Branch Manager/` |
+| Cashier module (Vimal Kumar) | `pages/cashier/` |
+| Postman testing report and 96 test cases | `reports/06-testing/` |
+| Requirements specification (SRS) | `reports/02-srs/` |
+| POS system documentation | `reports/05-implementation/` |
+| Report presentation | `reports/07-presentation/` |
+| Viva questions | `reports/08-demo-viva/` |
+| Project report | `reports/10-project-report/` |
 
-Made but not committed yet: the API test case sheet (96 cases).
-Done: Redux Toolkit (22 features, Vrushay and Subhash) and all frontend modules: Super Admin (Vrushay Bohra), Cashier (Vimal Kumar), Branch Manager (Vishvas Choubisa), Store and onboarding (Tanya Singh). Coming soon: a new assignment.
+A new assignment is coming soon.
 
 ## Marks status
 
 | Component | Marks | Status |
 | --- | --- | --- |
 | Idea & Abstract | 5 | Done |
-| SRS / Documentation | 10 | Not started |
+| SRS / Documentation | 10 | Done |
 | Design (Use-case, Class, ER) | 10 | Done, diagrams committed |
 | Weekly Progress | 25 | Ongoing, updated every week |
 | Implementation & Code Quality | 20 | In progress |
 | Testing | 10 | Report and 96 test cases written, results to record |
-| Presentation | 10 | Not started |
-| Demo & Viva | 10 | Not started |
+| Presentation | 10 | Done |
+| Demo & Viva | 10 | Started, viva questions written, demo to present |

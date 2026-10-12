@@ -133,3 +133,20 @@
 132,5af8fce,2026-10-11,Vrushay Bohra,bohra0022,Routing,feat(super-admin): add Super Admin routes,1
 133,6fb0e21,2026-10-11,Vrushay Bohra,bohra0022,Super Admin,fix(super-admin): correct page paths in index exports,1
 134,7edfd9c,2026-10-11,Vrushay Bohra,bohra0022,Super Admin,docs(super-admin): correct the registrations chart period in README,1
+135,8a8e267,2026-10-11,Subhash Dhaka,subhash8729,Redux Toolkit,feat(frontend:products)designed and developed the product pages find the best images and arranged the products in most likable way,2
+136,1817767,2026-10-11,Subhash Dhaka,subhash8729,Redux Toolkit,feat(frontend:refund): design and develop refund pages,2
+137,54376bb,2026-10-11,Subhash Dhaka,subhash8729,Redux Toolkit,feat(frontend:sale): design and develop sales pages,2
+138,a0def13,2026-10-11,Subhash Dhaka,subhash8729,Redux Toolkit,feat(frontend:shiftReport): design and develop shift report pages,2
+139,8357c9a,2026-10-11,Subhash Dhaka,subhash8729,Redux Toolkit,feat(frontend:store): design and develop store pages,2
+140,e8ecabd,2026-10-11,Subhash Dhaka,subhash8729,Redux Toolkit,C:\Users\Shubhash\Desktop\java projects\z-pos-source-code\pos-frontend-vite\src\Redux Toolkit\features\storeAnalytics,2
+141,86eee4a,2026-10-11,Subhash Dhaka,subhash8729,Redux Toolkit,feat(frontend:subscription): design and develop subscription pages,2
+142,80746b5,2026-10-11,Subhash Dhaka,subhash8729,Redux Toolkit,feat(frontend:subscriptionPlan): design and develop subscription plan pages,2
+143,4327fdb,2026-10-11,Subhash Dhaka,subhash8729,Redux Toolkit,feat(frontend:transaction): design and develop transaction pages,2
+144,8dc764e,2026-10-11,Subhash Dhaka,subhash8729,Redux Toolkit,feat(frontend:user): design and develop user pages,2
+145,1305905,2026-10-11,Subhash Dhaka,subhash8729,Redux Toolkit,created the routes for authentication in frontend side,2
+146,e412275,2026-10-11,Subhash Dhaka,subhash8729,Routing,added all necessery routes for authentication for frontend,3
+147,bfa7502,2026-10-11,Subhash Dhaka,subhash8729,Setup and shared,desiged some theme in figma for frontend,3
+148,01957c3,2026-10-11,Subhash Dhaka,subhash8729,Setup and shared,developed the hooks for contexts for frontend and also created the pages - sideBarcontext and sideBarProvider,4
+149,dcbbff7,2026-10-11,Subhash Dhaka,subhash8729,Setup and shared,created a react hook use-mobile in frontend src> hooks,3
+150,5d99ee7,2026-10-11,Subhash Dhaka,subhash8729,Setup and shared,setup the lib module,1
+151,3500a64,2026-10-11,Subhash Dhaka,subhash8729,Setup and shared,designed and developed some public html in public frontend directory,8

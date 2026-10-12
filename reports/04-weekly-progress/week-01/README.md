@@ -78,7 +78,7 @@ After login, `App.jsx` reads the role and shows only that role's pages. Every ot
 | --- | --- | --- |
 | Repository setup, frontend folder structure | Subhash Dhaka (subhash8729) | Done |
 | Backend upload, Redux Toolkit part 1, reports, Postman testing, commit log, timeline | Vrushay Bohra (bohra0022) | Done |
-| Redux Toolkit part 2 and `globleState.js` | Subhash Dhaka (subhash8729) | In progress |
+| Redux Toolkit part 2 and `globleState.js` | Subhash Dhaka (subhash8729) | Done |
 | Super Admin pages (6) | Vrushay Bohra (bohra0022) | Done |
 | Store pages (11, the largest module) and onboarding | Tanya Singh (tanyasingh077) | Done |
 | Branch Manager pages (9) | Vishvas Choubisa (choubisavishvas-web) | Done |

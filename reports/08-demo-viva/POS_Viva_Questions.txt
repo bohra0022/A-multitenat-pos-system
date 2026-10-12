@@ -1,0 +1,70 @@
+#  POS System: Viva Questions & Answers
+
+## A. Basics
+1. **What is a POS system, and what problem does  solve?**
+   A Point of Sale system records sales, payments and stock at the counter.  goes further: it is multi-tenant SaaS, so many stores (each with branches and cashiers) run on one platform and pay through subscriptions.
+
+2. **Why Spring Boot for the backend?**
+   Auto-configuration, starters (web, JPA, security, mail, validation), an embedded server and a huge ecosystem. It is ideal for REST APIs.
+
+3. **What does each starter do?** `data-jpa` handles the database through Hibernate. `security` handles auth and roles. `web` provides REST via Spring MVC. `validation` checks request bodies (@NotNull, @Email). `mail` sends emails.
+
+4. **Why Lombok and DevTools?** Lombok removes boilerplate (getters, setters, constructors). DevTools restarts the app automatically on code changes.
+
+## B. Architecture
+5. **Explain the layered architecture.** Controller → Service → Repository → Database. Controllers handle HTTP, services hold business logic, repositories use JPA.
+
+6. **Why use DTOs and Mappers?** They hide internal entities (e.g. the password hash) and decouple the API from the DB schema. Mappers convert Entity ↔ DTO (e.g. `UserMapper`, `ProductMapper`).
+
+7. **Interface + Impl (`UserService`/`UserServiceImpl`): why?** Loose coupling, easier mocking in tests, and the ability to swap implementations.
+
+8. **What do `@PrePersist` and `@PreUpdate` do?** JPA lifecycle hooks that set `createdAt` and `updatedAt` automatically.
+
+## C. Security
+9. **How does login work?** The user posts email and password to `/auth/login`. The password is checked against its BCrypt hash, then a JWT is returned. The client sends it in the `Authorization` header afterwards.
+
+10. **Why BCrypt?** It is a slow, salted, one-way hash, so rainbow-table and brute-force attacks are impractical.
+
+11. **What is a JWT and what are its three parts?** A signed token made of header, payload (claims such as email and roles) and signature. The server stays stateless because it only verifies the signature.
+
+12. **What are `jjwt-api`, `jjwt-impl` and `jjwt-jackson`?** The API to build and parse tokens, the runtime signing implementation, and the JSON parser integration.
+
+13. **How is RBAC applied?** Roles like `ROLE_CASHIER` and `ROLE_STORE_ADMIN` guard endpoints. For example, only a cashier creates orders, and only store managers or admins delete them.
+
+14. **What happens on an invalid token?** `UserException` or `AccessDeniedException` is thrown and the API returns 401 or 403.
+
+## D. Database & Design
+15. **Explain the entity relationships.** User → Store and Branch (ManyToOne). Product and Category → Store (ManyToOne). Inventory links Branch and Product. Order → Branch, Cashier, Customer (ManyToOne) and OrderItem (OneToMany). Branch ↔ Manager is OneToOne.
+
+16. **Why is there both a Product quantity and an Inventory table?** In the later design, stock is per branch: Inventory holds (branch, product, quantity), so one product can have different stock in each branch.
+
+17. **How do you keep tenants isolated?** Every business record links to a Store or Branch, and queries are scoped using the logged-in user's store from the JWT.
+
+## E. Business Logic
+18. **How is `netSales` computed in a shift report?** `totalSales − totalRefunds`.
+
+19. **What is a store's moderation lifecycle?** PENDING → APPROVED or DECLINED, decided by the super admin.
+
+20. **Describe the subscription lifecycle.** TRIAL → ACTIVE → EXPIRED or CANCELLED. Activation normally follows a successful payment, and expiring plans can be queried.
+
+21. **How do plan limits work?** Fields like `maxBranches`, `maxUsers` and `maxProducts` are checked before creating those resources, and feature flags gate premium modules.
+
+22. **Why support both Razorpay and Stripe?** Razorpay suits the Indian market (UPI, cards), while Stripe covers global payments.
+
+## F. Critical Thinking (examiners love these)
+23. **Why is `Double` risky for money?** Binary floating point cannot represent decimals exactly. `BigDecimal` is the correct type.
+
+24. **Several GET order endpoints are Public. Is that a problem?** Yes. Order data is sensitive, so they should require JWT and be scoped to the user's store.
+
+25. **What should happen to stock when a sale or refund occurs?** Decrement inventory on sale and restore it on refund, inside one `@Transactional` method for consistency.
+
+26. **How would you scale this?** Add pagination, caching (Redis) for dashboards, DB indexes on `storeId`/`branchId`/`createdAt`, and read replicas for analytics.
+
+27. **How would you test it?** JUnit and Mockito for services, `spring-security-test` for secured endpoints, and Postman for end-to-end API checks.
+
+28. **What would you add next?** Barcode scanning, PDF receipts, tax logic, offline mode, and AI-based sales forecasting.
+
+## Quick Tips for the Viva
+- Start answers with the **why**, then the **how**.
+- Be ready to draw the Store → Branch → Cashier hierarchy.
+- Admit the limitations in the Critical Review slide before the examiner points them out; it shows maturity.
